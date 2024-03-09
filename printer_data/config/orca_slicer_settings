@@ -1,0 +1,18 @@
+Machine start Gcode
+
+;M104 S0 ; Stops OrcaSlicer from sending temp waits separately
+;M140 S0
+CLEAR_PAUSE
+SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]
+PRINT_START EXTRUDER=[first_layer_temperature] BED=[first_layer_bed_temperature] CHAMBER=[chamber_temperature]
+
+
+Before layer change Gcode
+
+SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}
+;BEFORE_LAYER_CHANGE
+;[layer_z]
+G92 E0
+
+
+
