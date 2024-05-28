@@ -1,3 +1,10 @@
+# to downgrade klipper @ https://github.com/Klipper3d/klipper/commits/master/
+cd ~/klipper
+git reset #klipper version code here#
+systemctl restart klipper
+
+
+### Orca Slicer Start Gcode ####
 Machine start Gcode
 
 ;M104 S0 ; Stops OrcaSlicer from sending temp waits separately
@@ -13,6 +20,5 @@ SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}
 ;BEFORE_LAYER_CHANGE
 ;[layer_z]
 G92 E0
-
 
 
