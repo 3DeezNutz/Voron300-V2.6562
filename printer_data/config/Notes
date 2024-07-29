@@ -1,3 +1,8 @@
+CW2 Squish screw--- Tighten all the way back off half turn at a time until filament slips. then tighten 3/4 turn. 
+Tensioner knob--- Tighten down all the way and 2 turns loose.
+
+
+
 # to downgrade klipper @ https://github.com/Klipper3d/klipper/commits/master/
 cd ~/klipper
 git reset #klipper version code here#
