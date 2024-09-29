@@ -1,7 +1,10 @@
 CW2 Squish screw--- Tighten all the way an 1.8 turns out from tight. 
 Tensioner knob--- Tighten down all the way and 3 turns loose.
 
-
+###KIAUH downgrad klipper
+4 Advnaced
+1 rollback
+how many commits to roll back
 
 # to downgrade klipper @ https://github.com/Klipper3d/klipper/commits/master/
 cd ~/klipper
