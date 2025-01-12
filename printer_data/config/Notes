@@ -29,6 +29,14 @@ SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}
 ;[layer_z]
 G92 E0
 
+Orca Filament offset 
+start G-code
+SET_GCODE_OFFSET z=0
+SET_GCODE_OFFSET Z_ADJUST=0.025
+
+end G-code
+SET_GCODE_OFFSET z=0
+
 
 #### Installs ####
 
