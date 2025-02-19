@@ -37,6 +37,10 @@ SET_GCODE_OFFSET Z_ADJUST=0.025
 end G-code
 SET_GCODE_OFFSET z=0
 
+#### Clone SD card for PI####
+balenaetcher to cloen then
+sudo raspi-config >> advnaced >> Expand Filesystem >> reboot
+
 
 #### Installs ####
 
@@ -57,5 +61,6 @@ sudo apt update
 sudo apt install git
 git clone https://github.com/Staubgeborener/klipper-backup.git && chmod +x ./klipper-backup/script.sh && cp ./klipper-backup/.env.example ./klipper-backup/.env
 
+"printer_data/database/*" \  # this add time and print history to klipper back up
 
 
